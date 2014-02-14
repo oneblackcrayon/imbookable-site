@@ -21,11 +21,11 @@ footer[role="contentinfo"] {
 color: $grey;
 font-size: 12px;
 padding: 10px 0;
-text-align: center;
+text-align: left;
 }
 div[role="main"] {
 margin: 0 auto;
-padding: 0 20px 20px;
+padding: 0 0 20px;
 @include clearfix;
 }
 .container {
@@ -34,6 +34,8 @@ width: 72em;
 @include clearfix;
 }
 .logo {
+display: block;
+margin: 0;
 width: 200px;
 }
 .btn {

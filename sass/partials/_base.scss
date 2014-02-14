@@ -9,15 +9,16 @@ position: relative;
 width: 100%;
 }
 body {
-font-family: $helvetica, $base-font-family;
-font-size: $base-font-size;
-line-height: $base-line-height;
+font: $base-type;
+//font-family: $helvetica, $base-font-family;
+//font-size: $base-font-size;
+//line-height: $base-line-height;
 text-align: left;
 vertical-align: baseline;
 }
 h1,h2,h3,h4,h4,h6,article h1,section h1 {
 font-weight: $regular;
-line-height: $base-line-height;
+//line-height: $base-line-height;
 margin: 0;
 }
 h6 {
