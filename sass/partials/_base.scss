@@ -1,0 +1,60 @@
+html,body {
+background: $bg;
+border: 0;
+display: block;
+margin: 0;
+min-height: 100%;
+padding: 0;
+position: relative;
+width: 100%;
+}
+body {
+font-family: $helvetica, $base-font-family;
+font-size: $base-font-size;
+line-height: $base-line-height;
+text-align: left;
+vertical-align: baseline;
+}
+h1,h2,h3,h4,h4,h6,article h1,section h1 {
+font-weight: $regular;
+line-height: $base-line-height;
+margin: 0;
+}
+h6 {
+font-size: 12px;
+}
+h1,article h1,section h1 {
+font-size: 4em;
+}
+p,blockquote,blockquote p,ul,ol,dl,dt,dd {
+margin: 0 0 1em;
+}
+blockquote {
+margin: 0;
+}
+blockquote p {
+margin-bottom: 0;
+}
+img {
+height: auto;
+max-width: 100%;
+position: relative;
+}
+a img {
+border: none;
+outline: none;
+text-decoration: none;
+}
+fieldset,legend {
+border: none;
+padding: 0;
+}
+.hide {
+display: none;
+}
+.show {
+display: block;
+}
+.screen-reader-text {
+@include hide-text;
+}

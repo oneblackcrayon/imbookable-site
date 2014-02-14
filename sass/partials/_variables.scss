@@ -1,0 +1,52 @@
+// Base-styles
+$bg: #fafafa;
+$text: #101010;
+$link-color: #33ccff;
+$hover-color: #1133cc;
+$active-color: #c1133c;
+$visited-color: #cc33ff;
+$highlight: #3fcc3f;
+
+
+// Colors
+$black: #101010;
+$white: #fafafa;
+$grey: #4d5055;
+$red: #d10000;
+$orange: #ff6622;
+$yellow: #ffda21;
+$green: #33dd00;
+$blue: #1133cc;
+$indigo: #220066;
+$violet: #330044;
+
+// Color-classes
+.black {color:$black;}
+.white {color:$white;}
+.grey {color:$grey;}
+.red {color:$red;}
+.orange {color:$orange;}
+.yellow {color:$yellow;}
+.green {color:$green;}
+.blue {color:$blue;}
+.indigo {color:$indigo;}
+.violet {color:$violet;}
+
+// Font-weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Typography
+$base-font-family: sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+
+// Links
+a, a:hover, a:focus, a:visited {outline: none;@include transition(color .2s);}
+a {color: $link-color;}
+a:hover, a:focus {color: $hover-color;}
+a:active {color: $active-color;}
+a:visited {color: $grey;}
+mark {background: $highlight;color: $black;}

@@ -1,0 +1,77 @@
+@import 'bourbon/bourbon';
+@import 'partials/normalize';
+@import 'partials/variables';
+@import 'partials/base';
+
+header[role="banner"],footer[role="contentinfo"]{
+margin: 0;
+@include clearfix;
+}
+header[role="banner"] {
+background: $bg;
+padding: 40px 0;
+text-align: center;
+	& h1 {
+	font-weight: $regular;
+	letter-spacing: -1px;
+	text-transform: capitalize;
+	}
+}
+footer[role="contentinfo"] {
+color: $grey;
+font-size: 12px;
+padding: 10px 0;
+text-align: center;
+}
+div[role="main"] {
+margin: 0 auto;
+padding: 0 20px 20px;
+@include clearfix;
+}
+.container {
+margin: 0 auto;
+width: 72em;
+@include clearfix;
+}
+.logo {
+width: 200px;
+}
+.btn {
+display: inline-block;
+font-weight: $regular;
+margin: 0 auto;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+text-transform: capitalize;
+vertical-align: middle;
+zoom: 1;
+	&.reserve {
+	background: $orange;
+	border: none;
+	border-radius: 50px;
+	color: $white;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	@include transition(all .2s ease-in-out);
+		&:hover {
+		background: $green;
+		@include transition(all .2s ease-in-out);
+		}
+	}
+	&.launch {
+	background: $orange;
+	border-radius: 50px;
+	color: $white;
+	font-size: 24px;
+	margin-bottom: 10px;
+	padding: 20px;
+	@include clearfix;
+	}
+	&.faq,&.fb,&.gp,&.tw {
+	color: $grey;
+	display: inline-block;
+	}
+}
