@@ -2,13 +2,12 @@
 @import 'partials/normalize';
 @import 'partials/variables';
 @import 'partials/base';
-
-header[role="banner"],footer[role="contentinfo"]{
-margin: 0;
+header[role="banner"],div[role="main"],footer[role="contentinfo"],nav[role="navigation"]{
+margin: 0 auto;
+width: 72em;
 @include clearfix;
 }
 header[role="banner"] {
-background: $bg;
 padding: 40px 0;
 text-align: center;
 	& h1 {
@@ -18,19 +17,26 @@ text-align: center;
 	}
 }
 footer[role="contentinfo"] {
-color: $grey;
-font-size: 12px;
+color: $white;
 padding: 10px 0;
 text-align: left;
 }
-div[role="main"] {
-margin: 0 auto;
-padding: 0 0 20px;
+.landing h1, .landing p {
+color: $white;
+}
+.landing h1, p {
+margin-bottom: 20px;
+}
+.block {
+margin-bottom: 20px;
 @include clearfix;
 }
-.container {
-margin: 0 auto;
-width: 72em;
+.sharing-block {
+display: inline-block;
+margin: 0 0 0 -5px;
+overflow: hidden;
+text-align: center;
+width: 120px;
 @include clearfix;
 }
 .logo {
@@ -38,6 +44,20 @@ display: block;
 margin: 0;
 width: 200px;
 }
+input[type="email"].imbookable-input {
+border: 1px solid #d4d4d4;
+display: block;
+float: left;
+font-size: 14px;
+height: 44px;
+line-height: 17px;
+margin-right: 20px;
+padding: 10px;
+position: relative;
+vertical-align: middle;
+width: 300px;
+}
+input[type="email"]:focus{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;z-index:1;}
 .btn {
 display: inline-block;
 font-weight: $regular;
@@ -49,31 +69,32 @@ text-transform: capitalize;
 vertical-align: middle;
 zoom: 1;
 	&.reserve {
-	background: $orange;
+		background: $orange;
 	border: none;
-	border-radius: 50px;
+	border-radius: 10px;
 	color: $white;
-	font-size: 18px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 20px;
+	display: block;
+	float: left;
+	font-size: 14px;
+	padding: 14px;
+	text-shadow: none;
 	@include transition(all .2s ease-in-out);
 		&:hover {
-		background: $green;
+		background: $grey;
 		@include transition(all .2s ease-in-out);
 		}
 	}
-	&.launch {
-	background: $orange;
-	border-radius: 50px;
-	color: $white;
-	font-size: 24px;
-	margin-bottom: 10px;
-	padding: 20px;
-	@include clearfix;
-	}
 	&.faq,&.fb,&.gp,&.tw {
-	color: $grey;
+	color: $white;
 	display: inline-block;
 	}
 }
+
+// MailChimp form styles
+#mc_embed_signup div.mc-field-group {@include clearfix;}
+#mc_embed_signup .clear {clear:both;}
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}

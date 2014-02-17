@@ -38,14 +38,7 @@ $regular: 400;
 $bold: 600;
 
 // Typography
-//$base-font-family: sans-serif;
-//$base-font-weight: $regular;
-//$base-font-size: 16px;
-//$base-line-height: 1.5em;
-
-$base-type: 16px/1.5em $helvetica 400 normal;
-
-
+$base-type: 19px/1.5em $helvetica 400 normal;
 
 // Links
 a, a:hover, a:focus, a:visited {outline: none;@include transition(color .2s);}
